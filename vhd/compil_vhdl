@@ -1,0 +1,21 @@
+
+
+
+if [ ! -e ${TP_PATH}/libs/lib_RTL ]
+then
+  vlib ${TP_PATH}/libs/lib_RTL
+  vmap lib_RTL ${TP_PATH}/libs/lib_RTL 
+fi
+
+
+sources=( accu.vhd buff.vhd delayline.vhd fsm.vhd fsm_pipeline.vhd mult.vhd dac_interface.vhd adc_interface.vhd register.vhd register_2.vhd rom.vhd filtre.vhd filtre_pipeline.vhd )
+
+for i in "${sources[@]}"
+ do
+   vcom +acc -work lib_RTL  $i
+   if [ $? -ne 0 ]; then
+     break
+   fi  
+ done
+
+

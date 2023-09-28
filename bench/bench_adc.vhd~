@@ -1,0 +1,84 @@
+library ieee;
+use ieee.std_logic_1164.all;
+use ieee.numeric_std.all;
+use ieee.math_real.all;
+
+library lib_RTL;
+
+entity bench_adc is
+end entity;  -- bench_filter
+
+architecture arch of bench_adc is
+
+-- Time constant declaration
+    constant clockcycle : time := 20 ns;
+    constant half_clockcycle : time := clockcycle/2;
+
+-- Signal declaration
+    signal clk                  : std_logic := '1';
+    signal reset                : std_logic;
+    signal adc_data_request     : std_logic;
+    signal adc_eocb             : std_logic;
+    signal adc_data_ready       : std_logic;
+    signal adc_convstb          : std_logic;
+    signal adc_rdb              : std_logic;
+    signal adc_csb              : std_logic;
+    signal adc_write_conv_data  : std_logic;
+
+-- Component declaration
+    component adc_interface
+        port(
+            clk                 : in  std_logic;
+            reset               : in  std_logic;
+            adc_data_request    : in  std_logic;
+            adc_eocb            : in  std_logic;
+            adc_data_ready      : out std_logic;
+            adc_convstb         : out std_logic;
+            adc_rdb             : out std_logic;
+            adc_csb             : out std_logic;
+            adc_write_conv_data : out std_logic
+        );
+    end component;
+
+begin
+
+-- Port mapping
+    dut  :  adc_interface
+    port map (
+        clk                     => clk,
+        reset                   => reset,
+        adc_data_request        => adc_data_request,
+        adc_eocb                => adc_eocb,
+        adc_data_ready          => adc_data_ready,
+        adc_convstb             => adc_convstb,
+        adc_rdb                 => adc_rdb,
+        adc_csb                 => adc_csb,
+        adc_write_conv_data     => adc_write_conv_data
+    );
+
+--Generation of Clock cycles and Reset pulse
+    clk   <= not(clk) after half_clockcycle;
+    reset <= '1', '0' after clockcycle;
+
+-- Processing tests
+    test_adc : process
+    begin
+        adc_eocb         <= '1';
+        adc_data_request <= '0';
+        wait for 3*clockcycle;
+        adc_data_request <= '1';
+        wait for clockcycle;
+        adc_data_request <= '0';
+        wait for 5*clockcycle;
+        adc_eocb         <= '0';
+        wait for 3*clockcycle;
+        adc_eocb         <= '1';
+        wait for 4*clockcycle;
+    end process;
+
+end architecture;
+
+
+
+
+

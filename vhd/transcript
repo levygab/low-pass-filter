@@ -1,0 +1,123 @@
+# //  Questa Sim-64
+# //  Version 10.7c linux_x86_64 Aug 17 2018
+# //
+# //  Copyright 1991-2018 Mentor Graphics Corporation
+# //  All Rights Reserved.
+# //
+# //  QuestaSim and its associated documentation contain trade
+# //  secrets and commercial or financial information that are the property of
+# //  Mentor Graphics Corporation and are privileged, confidential,
+# //  and exempt from disclosure under the Freedom of Information Act,
+# //  5 U.S.C. Section 552. Furthermore, this information
+# //  is prohibited from disclosure under the Trade Secrets Act,
+# //  18 U.S.C. Section 1905.
+# //
+vsim lib_BENCH.bench_fsm
+# vsim lib_BENCH.bench_fsm 
+# Start time: 15:05:07 on Apr 08,2022
+# ** Note: (vsim-3813) Design is being optimized due to module recompilation...
+# Loading std.standard
+# Loading std.textio(body)
+# Loading ieee.std_logic_1164(body)
+# Loading ieee.numeric_std(body)
+# Loading ieee.math_real(body)
+# Loading work.bench_fsm(arch)#1
+# Loading lib_rtl.fsm(arch)#1
+add wave -position end  sim:/bench_fsm/clk
+# ** Warning: (vsim-WLF-5022) WLF summary optimizations disabled.  This will adversely affect wave draw performance.
+add wave -position end  sim:/bench_fsm/reset
+add wave -position end  sim:/bench_fsm/adc_data_ready
+add wave -position end  sim:/bench_fsm/adc_data_request
+add wave -position end  sim:/bench_fsm/delay_line_sample_shift
+add wave -position end  sim:/bench_fsm/accu_ctrl
+add wave -position end  sim:/bench_fsm/delay_line_address
+add wave -position end  sim:/bench_fsm/rom_address
+add wave -position end  sim:/bench_fsm/buff_oe
+add wave -position end  sim:/bench_fsm/dac_conv_data
+add wave -position end  sim:/bench_fsm/dut/next_state
+add wave -position end  sim:/bench_fsm/dut/current_state
+add wave -position end  sim:/bench_fsm/dut/new_count
+add wave -position end  sim:/bench_fsm/dut/count
+restart
+# ** Note: (vsim-8009) Loading existing optimized design _opt
+# ** Warning: (vsim-WLF-5022) WLF summary optimizations disabled.  This will adversely affect wave draw performance.
+run
+restart
+# ** Note: (vsim-3813) Design is being optimized due to module recompilation...
+# ** Note: (vopt-143) Recognized 1 FSM in architecture body "fsm(arch)".
+# Loading std.standard
+# Loading std.textio(body)
+# Loading ieee.std_logic_1164(body)
+# Loading ieee.numeric_std(body)
+# Loading ieee.math_real(body)
+# Loading work.bench_fsm(arch)#1
+# Loading lib_rtl.fsm(arch)#1
+# ** Warning: (vsim-WLF-5022) WLF summary optimizations disabled.  This will adversely affect wave draw performance.
+run
+restart
+# ** Note: (vsim-3813) Design is being optimized due to module recompilation...
+# ** Note: (vopt-143) Recognized 1 FSM in architecture body "fsm(arch)".
+# Loading std.standard
+# Loading std.textio(body)
+# Loading ieee.std_logic_1164(body)
+# Loading ieee.numeric_std(body)
+# Loading ieee.math_real(body)
+# Loading work.bench_fsm(arch)#1
+# Loading lib_rtl.fsm(arch)#1
+# ** Warning: (vsim-WLF-5022) WLF summary optimizations disabled.  This will adversely affect wave draw performance.
+run
+restart
+# ** Note: (vsim-3813) Design is being optimized due to module recompilation...
+# ** Note: (vopt-143) Recognized 1 FSM in architecture body "fsm(arch)".
+# Loading std.standard
+# Loading std.textio(body)
+# Loading ieee.std_logic_1164(body)
+# Loading ieee.numeric_std(body)
+# Loading ieee.math_real(body)
+# Loading work.bench_fsm(arch)#1
+# Loading lib_rtl.fsm(arch)#1
+# ** Warning: (vsim-WLF-5022) WLF summary optimizations disabled.  This will adversely affect wave draw performance.
+run
+restart
+# ** Note: (vsim-3813) Design is being optimized due to module recompilation...
+# Loading std.standard
+# Loading std.textio(body)
+# Loading ieee.std_logic_1164(body)
+# Loading ieee.numeric_std(body)
+# Loading ieee.math_real(body)
+# Loading work.bench_fsm(arch)#1
+# Loading lib_rtl.fsm(arch)#1
+# ** Warning: (vsim-WLF-5022) WLF summary optimizations disabled.  This will adversely affect wave draw performance.
+run
+restart
+# ** Note: (vsim-3813) Design is being optimized due to module recompilation...
+# Loading std.standard
+# Loading std.textio(body)
+# Loading ieee.std_logic_1164(body)
+# Loading ieee.numeric_std(body)
+# Loading ieee.math_real(body)
+# Loading work.bench_fsm(arch)#1
+# Loading lib_rtl.fsm(arch)#1
+# ** Warning: (vsim-WLF-5022) WLF summary optimizations disabled.  This will adversely affect wave draw performance.
+run
+restart
+# ** Note: (vsim-3813) Design is being optimized due to module recompilation...
+# Loading std.standard
+# Loading std.textio(body)
+# Loading ieee.std_logic_1164(body)
+# Loading ieee.numeric_std(body)
+# Loading ieee.math_real(body)
+# Loading work.bench_fsm(arch)#1
+# Loading lib_rtl.fsm(arch)#1
+# ** Warning: (vsim-WLF-5022) WLF summary optimizations disabled.  This will adversely affect wave draw performance.
+run
+restart
+# ** Note: (vsim-8009) Loading existing optimized design _opt
+# ** Warning: (vsim-WLF-5022) WLF summary optimizations disabled.  This will adversely affect wave draw performance.
+run
+restart
+# ** Note: (vsim-8009) Loading existing optimized design _opt
+# ** Warning: (vsim-WLF-5022) WLF summary optimizations disabled.  This will adversely affect wave draw performance.
+run
+# End time: 17:17:24 on Apr 08,2022, Elapsed time: 2:12:17
+# Errors: 0, Warnings: 1

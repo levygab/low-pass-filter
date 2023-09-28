@@ -1,0 +1,23 @@
+# //  Questa Sim-64
+# //  Version 10.7c linux_x86_64 Aug 17 2018
+# //
+# //  Copyright 1991-2018 Mentor Graphics Corporation
+# //  All Rights Reserved.
+# //
+# //  QuestaSim and its associated documentation contain trade
+# //  secrets and commercial or financial information that are the property of
+# //  Mentor Graphics Corporation and are privileged, confidential,
+# //  and exempt from disclosure under the Freedom of Information Act,
+# //  5 U.S.C. Section 552. Furthermore, this information
+# //  is prohibited from disclosure under the Trade Secrets Act,
+# //  18 U.S.C. Section 1905.
+# //
+vsim lib_BENCH.bench_filter -sdfnoerror -sdfnowarn -L c35_CORELIB -sdftyp /bench_filter/DUT=/tp/xph2seo/xph2seo006/Projet_CENI/filtre/synth/time.sdf
+# vsim lib_BENCH.bench_filter -sdfnoerror -sdfnowarn -L c35_CORELIB -sdftyp "/bench_filter/DUT=/tp/xph2seo/xph2seo006/Projet_CENI/filtre/synth/time.sdf" 
+# Start time: 16:28:33 on Apr 15,2022
+# ** Note: (vsim-3812) Design is being optimized...
+# ** Error: ./synth/filter_synth.vhdl(3362): (vopt-1598) Library "c35_CORELIB" not found.
+# ** Note: ./synth/filter_synth.vhdl(3362): Vopt Compiler exiting
+# Error loading design
+# End time: 16:28:34 on Apr 15,2022, Elapsed time: 0:00:01
+# Errors: 1, Warnings: 0

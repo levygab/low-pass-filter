@@ -1,0 +1,16 @@
+if [ ! -e ${TP_PATH}/libs/lib_BENCH ]
+then
+  vlib ${TP_PATH}/libs/lib_BENCH
+  vmap lib_RTL ${TP_PATH}/libs/lib_BENCH 
+fi
+
+sources=( bench_filter.vhd bench_adc.vhd bench_dac.vhd bench_fsm.vhd bench_fsm_pipeline.vhd bench_filter_pipeline.vhd )
+
+for i in "${sources[@]}"
+ do
+   vcom +acc -work lib_BENCH $i
+   if [ $? -ne 0 ]; then
+     break
+   fi  
+ done
+

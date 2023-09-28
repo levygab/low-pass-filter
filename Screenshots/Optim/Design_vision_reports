@@ -1,0 +1,112 @@
+        
+
+                                                                                                            ****************************************
+                                                                                                            Report : area
+                                                                                                            Design : filter
+                                                                                                            Version: J-2014.09-SP2
+                                                                                                            Date   : Fri Apr 15 15:39:06 2022
+                                                                                                            ****************************************
+
+                                                                                                            Number of ports:                           26
+                                                                                                            Number of nets:                            93
+                                                                                                            Number of cells:                           13
+                                                                                                            Number of combinational cells:              2
+                                                                                                            Number of sequential cells:                 2
+                                                                                                            Number of macros/black boxes:               0
+                                                                                                            Number of buf/inv:                          0
+                                                                                                            Number of references:                      12
+                                                                                                             
+                                                                                                            Combinational area:              87997.000175
+                                                                                                            Buf/Inv area:                     9791.600319
+                                                                                                            Noncombinational area:           83811.000000
+                                                                                                            Macro/Black Box area:                0.000000
+                                                                                                            Net Interconnect area:           32526.000000
+                                                                                                             
+                                                                                                            Total cell area:                171808.000175
+                                                                                                            Total area:                     204334.000175
+
+                                                                                                            ***** End Of Report *****
+
+
+
+
+
+                                                                                    ****************************************
+                                                                                    Report : power
+                                                                                            -analysis_effort low
+                                                                                    Design : filter
+                                                                                    Version: J-2014.09-SP2
+                                                                                    Date   : Fri Apr 15 15:40:58 2022
+                                                                                    **************************************** 
+                                                                                     
+                                                                                    Operating Conditions: TYPICAL   
+
+                                                                                    Global Operating Voltage = 3.3  
+                                                                                    Power-specific unit information :
+                                                                                        Voltage Units = 1V
+                                                                                        Capacitance Units = 1.000000pf
+                                                                                        Time Units = 1ns
+                                                                                        Dynamic Power Units = 1mW    (derived from V,C,T units)
+                                                                                        Leakage Power Units = 1pW
+                                                                                     
+                                                                                     
+                                                                                      Cell Internal Power  =   5.4717 mW   (91%)
+                                                                                      Net Switching Power  = 557.4765 uW    (9%)
+                                                                                                             ---------
+                                                                                    Total Dynamic Power    =   6.0292 mW  (100%)
+                                                                                     
+                                                                                    Cell Leakage Power     =   1.5631 nW
+                                                                                     
+                                                                                     
+                                                                                                     Internal         Switching           Leakage            Total
+                                                                                    Power Group      Power            Power               Power              Power   (   %    )  Attrs
+                                                                                    --------------------------------------------------------------------------------------------------
+                                                                                    io_pad             0.0000            0.0000            0.0000            0.0000  (   0.00%)
+                                                                                    memory             0.0000            0.0000            0.0000            0.0000  (   0.00%)
+                                                                                    black_box          0.0000            0.0000            0.0000            0.0000  (   0.00%)
+                                                                                    clock_network      0.0000            0.0000            0.0000            0.0000  (   0.00%)
+                                                                                    register           5.2946        4.1636e-02          854.6797            5.3363  (  88.51%)
+                                                                                    sequential         0.0000            0.0000            0.0000            0.0000  (   0.00%)
+                                                                                    combinational      0.1771            0.5158          708.4019            0.6929  (  11.49%)
+                                                                                    --------------------------------------------------------------------------------------------------
+                                                                                    Total              5.4717 mW         0.5575 mW     1.5631e+03 pW         6.0292 mW
+
+                                                                                    ***** End Of Report *****
+
+
+
+
+
+                                                                                                            ****************************************
+                                                                                                            Report : design
+                                                                                                            Design : filter
+                                                                                                            Version: J-2014.09-SP2
+                                                                                                            Date   : Fri Apr 15 15:44:37 2022
+                                                                                                            ****************************************
+                                                                                                             
+                                                                                                                Operating Condition Name : TYPICAL
+                                                                                                                Library : c35_CORELIB_TYP
+                                                                                                                Process :   1.00
+                                                                                                                Temperature :  25.00
+                                                                                                                Voltage :   3.30
+                                                                                                                Interconnect Model : balanced_tree
+                                                                                                             
+                                                                                                            Wire Loading Model:
+
+                                                                                                                Selected automatically from the total cell area.
+
+                                                                                                            Name           :   10k
+                                                                                                            Location       :   c35_CORELIB_TYP
+                                                                                                            Resistance     :   0.0014
+                                                                                                            Capacitance    :   0.001633
+                                                                                                            Area           :   1.8
+                                                                                                            Slope          :   5
+                                                                                                            Fanout   Length   Points Average Cap Std Deviation
+                                                                                                            --------------------------------------------------------------
+                                                                                                                 1     5.00
+
+                                                                                                            ***** End Of Report *****
+
+
+
+
